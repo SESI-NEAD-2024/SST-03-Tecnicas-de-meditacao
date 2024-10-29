@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Uso correto do protetor auditivo" />
+    <meta name="author" content="SESI" />
+    <title>SESI vida | Técnicas de Meditação</title>
+    <link rel="icon" type="image/png" href="src/img/Favicon.webp" />
+
+    <!-- Fonts GIBSON -->
+    <link rel="stylesheet" href="https://use.typekit.net/xqh7gyj.css" />
+
+    <!--Import Google Icon Font-->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
+    />
+
+    <!-- CSS -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="src/css/main.css"
+      media="screen"
+    />
+
+    <!-- Vue DEV MODE -->
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+
+    <!-- Vue PROD MODE -->
+    <script
+      rel="preconnect"
+      src="https://unpkg.com/vue@3/dist/vue.global.prod.js"
+    ></script>
+
+    <!-- Scorm JS -->
+    <script src="src/js/scorm/APIWrapper.js" defer></script>
+    <script src="src/js/scorm/SCOFunctions.js" defer></script>
+    <script src="src/js/scorm/scorm-app.js" defer></script>
+
+    <link rel="preload" href="src/img/aula/Hero-s.webp" as="image" />
+    <link rel="preload" href="src/img/aula/Hero.webp" as="image" />
+
+    <!-- Materialize JS -->
+    <script
+      type="text/javascript"
+      src="src/js/bin/materialize.js"
+      defer
+    ></script>
+
+    <!-- AOS JS -->
+    <script
+      type="text/javascript"
+      src="src/js/aos-master/aos.js"
+      defer
+    ></script>
+
+    <!-- App.js JS customizado aqui -->
+    <script type="module" src="src/js/app.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="src/css/aos.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- loading ---------------------------------- -->
+      <div id="loading">
+        <div class="spinner"></div>
+      </div>
+      <div id="content">
+        <!-- Sidebar ---------------------------------- -->
+        <sidebar></sidebar>
+
+        <!-- Navbar ---------------------------------- -->
+        <navbar></navbar>
+
+        <!-- Hero Banner ---------------------------------- -->
+        <hero>Técnicas de Meditação</hero>
+
+        <!-- introduçao ------------------------------------>
+        <div id="introducao" class="py-80 bg-green-light">
+          <div class="container">
+            <div class="row">
+              <div class="col m2 s12"></div>
+              <div class="col m4 s12">
+                <h1 class="white-text" data-aos="fade-up">Introdução</h1>
+                <h3 class="white-text">
+                  Seja bem-vindo(a) ao nosso curso de Técnicas de Meditação!
+                </h3>
+                <p class="white-text">
+                  Já imaginou como seria ter mais controle sobre seus
+                  pensamentos e emoções, não importa onde você esteja ou o que
+                  esteja acontecendo ao seu redor?
+                </p>
+                <p class="white-text">
+                  Pois bem, neste curso, você vai descobrir ferramentas
+                  poderosas que ajudam a cultivar presença, clareza mental e
+                  bem-estar. A meditação é uma prática que, quando incorporada
+                  ao seu dia a dia, pode transformar sua forma de viver e
+                  relacionar-se com o mundo.
+                </p>
+
+                <p class="white-text">
+                  Vamos juntos explorar essas técnicas e construir uma rotina
+                  que promova mais qualidade de vida e equilíbrio!
+                </p>
+              </div>
+              <div class="col m5 s12">
+                <img
+                  src="src/img/aula/static-01.webp"
+                  loading="lazy"
+                  alt="Mulher meditando"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefícios da meditação -->
+        <div id="beneficios" class="bg-blue-green py-80">
+          <div class="container--medium">
+            <h1 class="white-text center-align" data-aos="fade-up">
+              Benefícios da meditação
+            </h1>
+            <p class="white-text">
+              Vivemos em uma sociedade acelerada e repleta de informações:
+              notificações constantes no celular, demandas no trabalho,
+              compromissos familiares e contas para pagar. Muitas vezes,
+              acordamos já checando o celular ou passamos a noite preocupados
+              com algo que aconteceu, ou que acreditamos que “vai acontecer”.
+              Agora, imagine como seria enfrentar tudo isso de uma maneira mais
+              “presente” e “leve”.
+            </p>
+            <p class="white-text">
+              Uma estratégia que vem ganhando destaque em meio a esses desafios
+              contemporâneos é o treino de atenção plena, que inclui diversas
+              Técnicas de Meditação.
+            </p>
+
+            <div
+              class="box-attention box-attention--blue-deep px-16 flex--align-center"
+            >
+              <img
+                src="src/img/aula/static-02.webp"
+                loading="lazy"
+                alt="ícone de planta"
+                style="width: 100%; max-width: 70px"
+                class="mr-16"
+              />
+              <div>
+                <p class="white-text"><b>Para você</b></p>
+                <p class="white-text">
+                  Independentemente de sua formação ou situação atual, este
+                  curso foi criado para oferecer ferramentas que você pode
+                  explorar e experimentar. Vamos juntos descobrir os benefícios
+                  da meditação?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bullets -->
+          <div
+            class="bullets-wrap py-60 my-40"
+            style="background-color: #6fc6c6"
+          >
+            <h3 class="white-text center-align mb-32">
+              Conheça os benefícios da meditação
+            </h3>
+            <!-- Bullets Feature -->
+            <div class="click-reveal flex--justify-center">
+              <!-- Bullet -->
+              <a
+                class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                data-html="true"
+                data-position="bottom"
+                data-tooltip-id="bullet-01"
+                style="left: 32%; top: 30%"
+              >
+                <div class="px-8" id="bullet-01" style="display: none">
+                  <p
+                    class="white-text flex--align-center"
+                    style="font-size: 13.5px"
+                  >
+                    <img
+                      src="src/img/aula/check-meditacao.svg"
+                      alt="Ícone"
+                      class="mr-4"
+                      loading="lazy"
+                    />
+
+                    REDUÇÃO DO ESTRESSE
+                  </p>
+                </div>
+              </a>
+
+              <!-- Bullet -->
+              <a
+                class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                data-html="true"
+                data-position="bottom"
+                data-tooltip-id="bullet-02"
+                style="left: 35%; top: 60%"
+              >
+                <div class="px-8" id="bullet-02" style="display: none">
+                  <p
+                    class="white-text flex--align-center"
+                    style="font-size: 13.5px"
+                  >
+                    <img
+                      src="src/img/aula/check-meditacao.svg"
+                      alt="Ícone"
+                      class="mr-4"
+                      loading="lazy"
+                    />
+
+                    REDUÇÃO DA ANSIEDADE​
+                  </p>
+                </div>
+              </a>
+
+              <!-- Bullet -->
+              <a
+                class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                data-html="true"
+                data-position="bottom"
+                data-tooltip-id="bullet-03"
+                style="left: 25%; top: 75%"
+              >
+                <div class="px-8" id="bullet-03" style="display: none">
+                  <p
+                    class="white-text flex--align-center"
+                    style="font-size: 13.5px"
+                  >
+                    <img
+                      src="src/img/aula/check-meditacao.svg"
+                      alt="Ícone"
+                      class="mr-4"
+                      loading="lazy"
+                    />
+
+                    REDUÇÃO DE DORES​
+                  </p>
+                </div>
+              </a>
+
+              <!-- Bullet -->
+              <a
+                class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                data-html="true"
+                data-position="bottom"
+                data-tooltip-id="bullet-04"
+                style="left: 65%; top: 30%"
+              >
+                <div class="px-8" id="bullet-04" style="display: none">
+                  <p
+                    class="white-text flex--align-center"
+                    style="font-size: 13.5px"
+                  >
+                    <img
+                      src="src/img/aula/check-meditacao.svg"
+                      alt="Ícone"
+                      class="mr-4"
+                      loading="lazy"
+                    />
+
+                    AUMENTO DA QUALIDADE DE VIDA​
+                  </p>
+                </div>
+              </a>
+
+              <!-- Bullet -->
+              <a
+                class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                data-html="true"
+                data-position="bottom"
+                data-tooltip-id="bullet-05"
+                style="left: 75%; top: 60%"
+              >
+                <div class="px-8" id="bullet-05" style="display: none">
+                  <p
+                    class="white-text flex--align-center"
+                    style="font-size: 13.5px"
+                  >
+                    <img
+                      src="src/img/aula/check-meditacao.svg"
+                      alt="Ícone"
+                      class="mr-4"
+                      loading="lazy"
+                    />
+
+                    MELHORA DA QUALIDADE DO SONO​
+                  </p>
+                </div>
+              </a>
+
+              <!-- Bullet -->
+              <a
+                class="bullet btn-floating pulse waves-effect waves-light tooltipped"
+                data-html="true"
+                data-position="bottom"
+                data-tooltip-id="bullet-06"
+                style="left: 75%; top: 75%"
+              >
+                <div class="px-8" id="bullet-06" style="display: none">
+                  <p
+                    class="white-text flex--align-center"
+                    style="font-size: 13.5px"
+                  >
+                    <img
+                      src="src/img/aula/check-meditacao.svg"
+                      alt="Ícone"
+                      class="mr-4"
+                      loading="lazy"
+                    />
+                    AUMENTO DA CONCENTRAÇÃO​
+                  </p>
+                </div>
+              </a>
+
+              <img src="src/img/aula/meditando.webp" alt="Mulher meditando" />
+            </div>
+          </div>
+
+          <div class="container--medium">
+            <p class="white-text">
+              Uma pesquisa de doutorado em Harvard mostrou que pessoas que
+              meditam regularmente há bastante tempo apresentam uma maior
+              quantidade de matéria cinzenta em regiões sensoriais, auditivas e
+              relacionadas à memória de trabalho e à tomada de decisões. Isso
+              nos permite perceber melhor o ambiente e aproveitar o momento
+              presente, o que leva a decisões e comportamentos mais assertivos.
+            </p>
+            <h5 class="white-text">
+              VOCÊ SABIA que o córtex cerebral encolhe à medida que
+              envelhecemos, o que torna mais difícil compreender e lembrar das
+              coisas?
+            </h5>
+
+            <!-- box 2 -->
+            <div
+              class="box-attention box-attention--blue-deep my-24 px-16 flex--align-center"
+            >
+              <img
+                src="src/img/aula/static-04.webp"
+                loading="lazy"
+                alt="ícone de cabeça"
+                style="width: 100%; max-width: 70px"
+                class="mr-16"
+              />
+              <div>
+                <p><b class="white-text">É isso mesmo!</b> <br /></p>
+                <p class="white-text">
+                  Diversas evidências científicas comprovam essa tese. No
+                  entanto, surpreendentemente, meditadores de 50 anos
+                  apresentaram a mesma quantidade de matéria cinzenta que jovens
+                  de 25 anos, demonstrando os benefícios da meditação para a
+                  nossa capacidade de aprender e lembrar, mesmo em idades em que
+                  julgamos "normal" enfrentar esquecimentos ou ter mais
+                  dificuldade para aprender e se adaptar a mudanças.
+                </p>
+              </div>
+            </div>
+
+            <p class="white-text">
+              Os benefícios da meditação também se estendem ao gerenciamento das
+              emoções. Pesquisas recentes sobre a neurobiologia da atenção plena
+              mostram que o treinamento pode melhorar a maneira como processamos
+              e gerenciamos nossas emoções, o que tem um grande impacto nos
+              nossos relacionamentos e na nossa qualidade de vida em geral.
+            </p>
+          </div>
+        </div>
+
+        <!-- Controle das emoções -->
+        <div id="controle" class="py-80">
+          <div class="container">
+            <div class="row mb-40">
+              <div class="col m2 s12"></div>
+              <div class="col m4 s12">
+                <h1 class="blue-deep-text" data-aos="fade-up">
+                  Controle das emoções
+                </h1>
+
+                <p>
+                  Às vezes, somos surpreendidos por sentimentos e pensamentos
+                  que parecem escapar do nosso controle, especialmente aqueles
+                  que classificamos como "desconfortáveis" ou "desagradáveis",
+                  como a raiva ou a preocupação. Quando isso acontece, é comum
+                  que o "modo piloto automático" entre em ação, nos levando a
+                  tomar atitudes que, embora não resolvam o problema, oferecem
+                  um alívio temporário.
+                </p>
+                <p>
+                  Isso pode se manifestar em hábitos como comer em excesso,
+                  exagerar no consumo de bebidas ou buscar outras formas de
+                  escapismo. E, no calor do momento, podemos acabar em
+                  discussões — seja no trânsito, em casa ou no trabalho —
+                  criando uma bola de neve de problemas que só piora a situação.
+                </p>
+              </div>
+              <div class="col m5 s12">
+                <img
+                  src="src/img/aula/static-05.webp"
+                  loading="lazy"
+                  alt="Mulher meditando"
+                  style="width: 100%"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col m2 s12"></div>
+              <div class="col m8 s12">
+                <question-checkbox></question-checkbox>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+
+        <!-- Atenção plena ------------------------------------>
+        <div id="atencao" class="py-80" style="background-color: #005ca7">
+          <div class="container">
+            <img
+              src="src/img/aula/static-06.webp"
+              loading="lazy"
+              alt="Mulher na natureza"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="container--medium">
+            <h1 class="white-text mt-40" data-aos="fade-up">Atenção plena</h1>
+            <p class="white-text">
+              A atenção plena é como abrir uma janela para observar o que se
+              passa dentro de nós. É uma prática em que observamos nossos
+              pensamentos, sentimentos e sensações corporais com gentileza,
+              abertura e curiosidade. Sem julgamentos, sem rótulos. Apenas
+              notamos o que surge, exatamente como é.
+            </p>
+            <p class="white-text">
+              Quando praticamos dessa forma, nos tornamos mais capazes de
+              aceitar a realidade como ela é e agir de acordo com o que
+              realmente importa para nós. Em vez de sermos levados pelas emoções
+              e interpretações automáticas, começamos a escolher nossas
+              respostas com mais clareza.
+            </p>
+            <p class="white-text">
+              A ideia é simples: ver os pensamentos apenas como pensamentos, as
+              emoções apenas como emoções e as sensações físicas apenas como
+              sensações físicas.
+            </p>
+            <p class="white-text">
+              <b
+                >Isso significa que você não precisa se identificar ou agir com
+                tudo o que acontece dentro de você.</b
+              >
+            </p>
+
+            <div>
+              <h3 class="yellow-text py-24">
+                O que é importante saber sobre o treino de atenção plena?
+              </h3>
+              <div class="row">
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-07.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        Não existe um jeito “certo” ou “errado” de praticar a
+                        atenção plena ou meditação. No entanto, seguir as
+                        orientações dos áudios ou vídeos pode ajudar a criar um
+                        ambiente mais favorável para sua prática.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-08.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        Assim como qualquer nova habilidade, a atenção plena
+                        exige tempo e paciência. É normal precisar de um tempo
+                        para se acostumar com a prática.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-09.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        Não se preocupe em aprender tudo de uma vez. É a prática
+                        constante que vai ajuda-lo(la) a aproveitar os
+                        benefícios de uma vida mais presente e produtiva.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-10.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        Está enfretando dificuldades ou sentindo emoções
+                        complicadas? Não se desanime! O objetivo é vivenciar
+                        cada momento com uma mente aberta e curiosa, sem tentar
+                        forçar ou mudar o que surge.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-11.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        Conhecer a si mesmo é o primeiro passo para uma mudança
+                        real, e isso é bem diferente de tentar evitar ou
+                        controlar as emoções difíceis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-11.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        Durante a prática da atenção plena, o objetivo é
+                        vivenciar plenamente o que surge em sua mente, momento a
+                        momento, com boa vontade, curiosidade e abertura.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                  <!-- Card -->
+                  <div class="card">
+                    <div class="card-image activator">
+                      <img
+                        src="src/img/aula/static-12.webp"
+                        loading="lazy"
+                        alt="Mulher sorridente"
+                      />
+                      <div
+                        class="activator waves-effect waves-light"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                        "
+                      ></div>
+                    </div>
+                    <div class="card-content activator py-8 pt-16">
+                      <span
+                        class="card-title activator blue-light-text flex--justify-between"
+                      >
+                        <p class="m-0" style="color: #5c5c5c7f">
+                          <b>Clique para revelar</b>
+                        </p>
+                      </span>
+                    </div>
+                    <div class="card-reveal">
+                      <span
+                        class="card-title blue-light-text flex--justify-between"
+                      >
+                        <span class="material-symbols-rounded"> close </span>
+                      </span>
+
+                      <p>
+                        A atenção plena não se trata de afastar ou controlar
+                        emoções, mas de acolher o que surge sem resistência.
+                        Tentar controlar ou reprimir emoções pode, na verdade,
+                        intensificar o sofrimento.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hora da prática -->
+        <div id="pratica" class="py-80" style="background-color: #09528d">
+          <div class="container--medium">
+            <h1 class="white-text" data-aos="fade-up">Hora da prática</h1>
+            <p class="white-text">
+              Agora que você compreendeu a importância da meditação e como ela
+              pode transformar sua qualidade de vida, que tal experimentar
+              alguns exercícios para sentir esses benefícios na prática?
+            </p>
+            <br />
+            <p class="white-text">Está preparado(a)?</p>
+            <br />
+            <p class="white-text">
+              <b>Então, clique nas caixas a seguir.</b> Preparamos três
+              exercícios de meditação especialmente para você. Aproveite ao
+              máximo essa experiência!
+            </p>
+
+            <div class="row mt-60">
+              <div class="col l5 m6 s12">
+                <p class="white-text">
+                  Técnica 1 <br />
+                  <b>Escaneamento corporal</b>
+                </p>
+              </div>
+              <div class="col l7 m6 s12">
+                <audio controls style="width: 100%">
+                  <source
+                    src="src/audio/Audio 3 - Podcast Sesi_v4.mp3"
+                    type="audio/mpeg"
+                  />
+                  Seu browser não suporta o arquivo de áudio
+                </audio>
+              </div>
+            </div>
+
+            <hr style="border-color: #2176bb" />
+
+            <div class="row mt-60">
+              <div class="col l5 m6 s12">
+                <p class="white-text">
+                  Técnica 2 <br />
+                  <b>Atenção plena respiratória</b>
+                </p>
+              </div>
+              <div class="col l7 m6 s12">
+                <audio controls style="width: 100%">
+                  <source
+                    src="src/audio/Audio 1 - Podcast Sesi_v2.mp3"
+                    type="audio/mpeg"
+                  />
+                  Seu browser não suporta o arquivo de áudio
+                </audio>
+              </div>
+            </div>
+
+            <hr style="border-color: #2176bb" />
+
+            <div class="row mt-60">
+              <div class="col l5 m6 s12">
+                <p class="white-text">
+                  Técnica 3 <br />
+                  <b>Espaço respiratório</b>
+                </p>
+              </div>
+              <div class="col l7 m6 s12">
+                <audio controls style="width: 100%">
+                  <source
+                    src="src/audio/Audio 2 - Podcast Sesi_v4.mp3"
+                    type="audio/mpeg"
+                  />
+                  Seu browser não suporta o arquivo de áudio
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- conclusao -->
+        <div id="conclusao-txt" class="py-240 py-240-tablet py-80-mobile">
+          <div class="container--medium">
+            <div class="row">
+              <div class="col l7 m2 s12"></div>
+              <div class="col l5 m10 s12">
+                <h1 class="white-text" data-aos="fade-up">Conclusão</h1>
+                <p class="white-text">
+                  Chegamos ao fim do curso Técnicas de Meditação! Ao longo desta
+                  jornada, você aprendeu como a meditação e a atenção plena
+                  podem transformar sua vida, trazendo mais equilíbrio e clareza
+                  para o seu dia a dia.
+                </p>
+
+                <p class="white-text">
+                  Lembre-se de que a prática contínua é essencial para colher os
+                  benefícios dessas técnicas. Cada momento é uma nova
+                  oportunidade para aplicar o que aprendeu e cultivar uma mente
+                  mais presente e serena.
+                </p>
+
+                <p class="white-text">
+                  Continue dedicando tempo para cuidar de si mesmo(a) e
+                  aproveite a tranquilidade e o bem-estar que a meditação pode
+                  proporcionar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Referencias ------------------------------------>
+        <div id="referencias" class="pt-80 container--medium">
+          <h1 data-aos="fade-up">Referência</h1>
+
+          <p>
+            LEAHY, Robert L.; TIRCH, Dennis; NAPOLITANO, Lisa A.
+            <i>A mente compassiva:</i> técnicas para transformar o sofrimento e
+            aumentar o bem-estar. Tradução de Ivo Oliveira. Porto Alegre:
+            Artmed, 2013. 331 p.
+          </p>
+        </div>
+
+        <!-- Concluir ---------------------------------- -->
+        <concluir></concluir>
+
+        <!-- Footer ------------------------------------>
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </body>
+</html>
