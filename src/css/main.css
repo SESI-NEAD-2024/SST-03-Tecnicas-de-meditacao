@@ -12591,71 +12591,18 @@ nav .progress {
 
 #hero {
   background-size: contain;
-  background-position: 100% top;
+  background-position: center center;
   background-repeat: no-repeat;
-  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 0;
-  /* Media queries - Responsive timeline on screens less than 1400px wide */
+  aspect-ratio: 1921/797;
+  background-image: url(../img/aula/Hero.webp);
 }
-#hero .badge {
-  background-color: var(--green);
-  color: white;
-  padding: 6px 12px 4px 12px;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1411764706);
-  display: inline-block;
-}
-@media only screen and (min-width : 993px) {
+@media only screen and (max-width : 992.99px) {
   #hero {
-    height: 80vh;
-    background-image: url(../img/aula/Hero.png);
-  }
-}
-@media screen and (max-width: 1400px) {
-  #hero {
-    background-position: 120% top;
-  }
-}
-@media screen and (max-width: 1280px) {
-  #hero .display1 {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 1100px) {
-  #hero {
-    background-position: 200% top;
-  }
-}
-@media only screen and (min-width : 601px) and (max-width : 992.99px) {
-  #hero {
-    height: 400px;
-    background-image: url(../img/aula/Hero-s.png);
-    background-position: 100% top !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  #hero {
-    background-position: 145% top !important;
-  }
-}
-@media only screen and (max-width : 600.99px) {
-  #hero {
-    display: flex;
-    flex-direction: column;
-    background-image: none;
-    padding-bottom: 0;
-    align-items: flex-start;
-  }
-  #hero .mobile-hero {
-    display: block;
-    width: 100%;
-    margin-top: 80px;
-  }
-  #hero .display1 {
-    font-size: 2.7rem;
+    background-image: url(../img/aula/Hero-s.webp);
+    aspect-ratio: 950/486;
   }
 }
 
@@ -13297,11 +13244,11 @@ footer .container {
 }
 .box-attention--blue-deep {
   background-color: var(--blue-deep);
-  border-top: 3px solid #178ff1;
+  border-top: 3px solid #0d74c8;
 }
 .box-attention--blue-light {
   background-color: var(--blue-light);
-  border-top: 3px solid #82c9e1;
+  border-top: 3px solid #59b8d7;
 }
 @media only screen and (max-width : 992.99px) {
   .box-attention {
