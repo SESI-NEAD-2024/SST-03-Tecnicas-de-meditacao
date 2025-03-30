@@ -1,30 +1,4 @@
-export default {
-  name: "Hero",
-  data() {
-    return {
-      showImg: false,
-    };
-  },
-  mounted() {
-    this.checkWidth();
-    window.addEventListener("resize", this.checkWidth);
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.checkWidth);
-  },
-  methods: {
-    checkWidth() {
-      if (window.innerWidth <= 600) {
-        this.showImg = true;
-      }else{
-        this.showImg = false;
-      }
-    }
-  },
-
-  
-  template://html
-  `
+export default{name:"Hero",data(){return{showImg:!1}},mounted(){this.checkWidth(),window.addEventListener("resize",this.checkWidth)},beforeDestroy(){window.removeEventListener("resize",this.checkWidth)},methods:{checkWidth(){window.innerWidth<=600?this.showImg=!0:this.showImg=!1}},template:`
   <div class="blue-light-to-blue-green-bg2">
   <div id="hero" class="scrollspy">
     <div class="container">
@@ -45,5 +19,4 @@ export default {
     />
   </div>
 </div>
-`,
-};
+`};
